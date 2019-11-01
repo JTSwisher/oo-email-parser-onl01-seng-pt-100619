@@ -7,9 +7,12 @@ class EmailAddressParser
   
   @@all = [ ]
   
-  def parse(email)
-    input = email 
-    input.split.uniq
+  def self.all
+    @@all    
+  end
+  
+  def parse
+    @@all.split.uniq
     
   end 
   
