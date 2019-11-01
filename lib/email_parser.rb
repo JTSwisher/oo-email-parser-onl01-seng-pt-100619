@@ -9,6 +9,7 @@ class EmailAddressParser
   
   def parse(email)
     input = email 
+    input.split.uniq
     
   end 
   
